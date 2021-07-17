@@ -16,8 +16,11 @@ class Converter {
 
 		// While loop
 		while (menuSelection != Quit) {
-			System.out.println("Please select an option:\n" + "1. Teaspoons to Cups\n" + "2. Miles to Kilometers\n"
-					+ "3. US Gallons to Imperial Gallons\n" + "4. Quit");
+			System.out.println("Please select(1-4) from the options below:\n" 
+								+ "1. Teaspoons to Cups\n" 
+								+ "2. Miles to Kilometers\n"
+								+ "3. US Gallons to Imperial Gallons\n" 
+								+ "4. Quit");
 
 			// User Input for option
 			//Scanner s = new Scanner(System.in);
