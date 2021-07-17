@@ -2,8 +2,8 @@
 import java.util.Scanner;
 
 class Converter {
-	static int i;
-	static int j;
+	static double i;
+	static double j;
 	static double result;
 	static Scanner s = new Scanner(System.in);
 	public static void main(String[] args) {
@@ -48,7 +48,7 @@ class Converter {
 	// static methods is used here so there is no need to create an instance
 	public static void Tsp2Cups() {
 		System.out.println("How many teaspoons?");
-		i = s.nextInt(); // nextInt();
+		i = s.nextDouble(); // nextInt();
 		j = i * 48;
 		System.out.println("There are " + j + " teaspoons in " + i + " cups.");
 	}
@@ -56,15 +56,15 @@ class Converter {
 	public static void Mi2Km() {
 		double Mi2Km = 0.621371;
 		System.out.println("How many miles?");
-		i = s.nextInt(); // nextInt();
-		result = (double) i * Mi2Km;
+		i = s.nextDouble(); // nextInt();
+		result = i * Mi2Km;
 		System.out.println("There are " + result + " kilometers in " + i + " miles.");
 	}
 
 	public static void USgaltoIgal() {
 		System.out.println("How many US Gals?");
-		i = s.nextInt(); // nextInt();
-		result = (double) i * 0.832674;
+		i = s.nextDouble(); // nextInt();
+		result = i * 0.832674;
 		System.out.println("There are " + result + "US gals in " + i + " Imperial gals.");
 	}
 }
